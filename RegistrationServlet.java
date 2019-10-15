@@ -14,7 +14,7 @@ public class RegistrationServlet extends HttpServlet
  	{
 	   Class.forName("oracle.jdbc.OracleDriver");
 	   System.out.println("driver loaded!");
-	   conn = DriverManager.getConnection("jdbc:oracle:thin:@//mypc-PC:1521/xe","advjavabatch","students");
+	   conn = DriverManager.getConnection("jdbc:oracle:thin:@//pc:1521/xe","advjava","student");
 	   ps = conn.prepareStatement("insert into users values(?,?,?)");
 	   System.out.println("Query Set!");
 	}
